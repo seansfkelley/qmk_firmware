@@ -13,3 +13,8 @@
 #define RAW_USAGE_ID 0x61
 #define LAYER_STATE_8BIT
 
+// constant mode mouse movement
+#define MK_3_SPEED
+// contant mode: momentary, not tap-to-select
+#define MK_MOMENTARY_ACCEL
+

@@ -17,4 +17,7 @@
 #define MK_3_SPEED
 // contant mode: momentary, not tap-to-select
 #define MK_MOMENTARY_ACCEL
+// eww, default acceleration
+#undef MOUSEKEY_WHEEL_TIME_TO_MAX
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 0
 

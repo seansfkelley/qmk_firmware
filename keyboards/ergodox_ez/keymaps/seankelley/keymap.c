@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______,      _______,        _______,        _______,        _______,                                                                                                        KC_MPRV,        KC_MPLY,        KC_MNXT,        XXXXXXX,        XXXXXXX,
                                                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                                                                     XXXXXXX,        XXXXXXX,
-                                                                                    KC_MS_BTN1,     KC_MS_BTN2,     _______,        XXXXXXX,        XXXXXXX,        XXXXXXX
+                                                                                    KC_MS_BTN1,     KC_MS_BTN2,     _______,        _______,        XXXXXXX,        XXXXXXX
   ),
   // symbols and F-keys
   [2] = LAYOUT_ergodox_pretty(

@@ -60,42 +60,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LALT(LCTL(KC_LGUI)),KC_A,       KC_S,           KC_D,           KC_F,           KC_G,                                                                           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCOLON,      KC_QUOTE,
     KC_LSPO,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_LBRACKET,                                    KC_RBRACKET,    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RSPC,
     KC_LCTRL,       _______,        KC_LCTRL,       KC_LALT,        KC_LGUI,                                                                                                        _______,        _______,        _______,        _______,        _______,
-                                                                                                    _______,        TG(3),          _______,        KC_DELETE,
+                                                                                                    _______,        TT(1),          _______,        KC_DELETE,
                                                                                                                     _______,        _______,
                                                                                     KC_SPACE,       MO(2),          KC_ESCAPE,      MO(1),          KC_BSPACE,      KC_ENTER
   ),
   // navigation
   [1] = LAYOUT_ergodox_pretty(
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        _______,        LGUI(KC_MINUS), LGUI(KC_0),     RGUI(KC_EQUAL), _______,        _______,
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        KC_HOME,        KC_PGDOWN,      KC_PGUP,        KC_END,         _______,        _______,
-    _______,        _______,        _______,        _______,        _______,        _______,                                                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       _______,        _______,
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        _______,        KC_VOLD,        KC_MUTE,        KC_VOLU,        _______,        _______,
-    _______,        _______,        _______,        _______,        _______,                                                                                                        KC_MPRV,        KC_MPLY,        KC_MNXT,        _______,        _______,
-                                                                                                    _______,        _______,        _______,        _______,
-                                                                                                                    _______,        _______,
-                                                                                    _______,        _______,        _______,        _______,        _______,        _______
+      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                      XXXXXXX,        XXXXXXX,        LGUI(KC_MINUS), LGUI(KC_0),     RGUI(KC_EQUAL), XXXXXXX,        XXXXXXX,
+      XXXXXXX,        XXXXXXX,        KC_MS_UP,       XXXXXXX,        KC_MS_WH_UP,    XXXXXXX,        XXXXXXX,                                      XXXXXXX,        KC_HOME,        KC_PGDOWN,      KC_PGUP,        KC_END,         XXXXXXX,        XXXXXXX,
+      KC_MS_ACCEL2,   KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  XXXXXXX,                                                                      KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        XXXXXXX,
+      KC_MS_ACCEL1,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                      XXXXXXX,        XXXXXXX,        KC_VOLD,        KC_MUTE,        KC_VOLU,        XXXXXXX,        XXXXXXX,
+      KC_MS_ACCEL0,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                                                                      KC_MPRV,        KC_MPLY,        KC_MNXT,        XXXXXXX,        XXXXXXX,
+                                                                                                      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,
+                                                                                                                    XXXXXXX,        XXXXXXX,
+                                                                                      KC_MS_BTN1,     KC_MS_BTN2,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
   // symbols and F-keys
   [2] = LAYOUT_ergodox_pretty(
-    _______,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          _______,                                        _______,        KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         _______,
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        _______,        _______,        _______,        _______,        _______,        _______,
-    _______,        KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_PLUS,        KC_EQUAL,       _______,
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        _______,        _______,        _______,        _______,        _______,        _______,
-    _______,        _______,        _______,        _______,        _______,                                                                                                        _______,        _______,        _______,        _______,        _______,
-                                                                                                    _______,        _______,        _______,        _______,
-                                                                                                                    _______,        _______,
-                                                                                    _______,        _______,        _______,        _______,        _______,        _______
-  ),
-  // mouse (WASD)
-  [3] = LAYOUT_ergodox_pretty(
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        _______,        _______,        _______,        _______,        _______,        _______,
-    _______,        _______,        KC_MS_UP,       _______,        KC_MS_WH_UP,    _______,        _______,                                        _______,        _______,        _______,        _______,        _______,        _______,        _______,
-    KC_MS_ACCEL2,   KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  _______,                                                                        _______,        _______,        _______,        _______,        _______,        _______,
-    KC_MS_ACCEL1,   _______,        _______,        _______,        _______,        _______,        _______,                                        _______,        _______,        _______,        _______,        _______,        _______,        _______,
-    KC_MS_ACCEL0,   _______,        _______,        _______,        _______,                                                                                                        _______,        _______,        _______,        _______,        _______,
-                                                                                                    _______,        _______,        _______,        _______,
-                                                                                                                    _______,        _______,
-                                                                                    KC_MS_BTN1,     KC_MS_BTN2,     _______,        _______,        _______,        _______
+    XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          XXXXXXX,                                        XXXXXXX,        KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_PLUS,        KC_EQUAL,       XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                                                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+                                                                                                    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+                                                                                                                    XXXXXXX,        XXXXXXX,
+                                                                                    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
 };
 

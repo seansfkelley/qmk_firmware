@@ -55,25 +55,25 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // base: qwerty-derived
   [0] = LAYOUT_ergodox_pretty(
-    KC_GRAVE,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           _______,                                        _______,        KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,
+    KC_GRAVE,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           XXXXXXX,                                        XXXXXXX,        KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,
     KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_LABK,                                        KC_RABK,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLASH,
     LALT(LCTL(KC_LGUI)),KC_A,       KC_S,           KC_D,           KC_F,           KC_G,                                                                           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCOLON,      KC_QUOTE,
     KC_LSPO,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_LBRACKET,                                    KC_RBRACKET,    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RSPC,
-    KC_LCTRL,       _______,        KC_LCTRL,       KC_LALT,        KC_LGUI,                                                                                                        _______,        _______,        _______,        _______,        _______,
-                                                                                                    _______,        TT(1),          _______,        KC_DELETE,
-                                                                                                                    _______,        _______,
-                                                                                    KC_SPACE,       MO(2),          KC_ESCAPE,      MO(1),          KC_BSPACE,      KC_ENTER
+    KC_LCTRL,       XXXXXXX,        KC_LCTRL,       KC_LALT,        KC_LGUI,                                                                                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+                                                                                                    XXXXXXX,        XXXXXXX,        XXXXXXX,        KC_DELETE,
+                                                                                                                    XXXXXXX,        XXXXXXX,
+                                                                                    KC_SPACE,       MO(2),          KC_ESCAPE,      TT(1),          KC_BSPACE,      KC_ENTER
   ),
   // navigation
   [1] = LAYOUT_ergodox_pretty(
-      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                      XXXXXXX,        XXXXXXX,        LGUI(KC_MINUS), LGUI(KC_0),     RGUI(KC_EQUAL), XXXXXXX,        XXXXXXX,
-      XXXXXXX,        XXXXXXX,        KC_MS_UP,       XXXXXXX,        KC_MS_WH_UP,    XXXXXXX,        XXXXXXX,                                      XXXXXXX,        KC_HOME,        KC_PGDOWN,      KC_PGUP,        KC_END,         XXXXXXX,        XXXXXXX,
-      KC_MS_ACCEL2,   KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  XXXXXXX,                                                                      KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        XXXXXXX,
-      KC_MS_ACCEL1,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                      XXXXXXX,        XXXXXXX,        KC_VOLD,        KC_MUTE,        KC_VOLU,        XXXXXXX,        XXXXXXX,
-      KC_MS_ACCEL0,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                                                                      KC_MPRV,        KC_MPLY,        KC_MNXT,        XXXXXXX,        XXXXXXX,
-                                                                                                      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,
+      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        LGUI(KC_MINUS), LGUI(KC_0),     RGUI(KC_EQUAL), XXXXXXX,        XXXXXXX,
+      XXXXXXX,      XXXXXXX,        KC_MS_UP,       XXXXXXX,        KC_MS_WH_UP,    XXXXXXX,        XXXXXXX,                                        XXXXXXX,        KC_HOME,        KC_PGDOWN,      KC_PGUP,        KC_END,         XXXXXXX,        KC_MS_ACCEL2,
+      _______,      KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  XXXXXXX,                                                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        KC_MS_ACCEL1,
+      _______,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        KC_VOLD,        KC_MUTE,        KC_VOLU,        XXXXXXX,        KC_MS_ACCEL0,
+      _______,      _______,        _______,        _______,        _______,                                                                                                        KC_MPRV,        KC_MPLY,        KC_MNXT,        XXXXXXX,        XXXXXXX,
+                                                                                                    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                                                                     XXXXXXX,        XXXXXXX,
-                                                                                      KC_MS_BTN1,     KC_MS_BTN2,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX
+                                                                                    KC_MS_BTN1,     KC_MS_BTN2,     _______,        XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
   // symbols and F-keys
   [2] = LAYOUT_ergodox_pretty(

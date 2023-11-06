@@ -66,14 +66,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   // navigation
   [1] = LAYOUT_ergodox_pretty(
-      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        LGUI(KC_MINUS), LGUI(KC_0),     RGUI(KC_EQUAL), XXXXXXX,        XXXXXXX,
-      XXXXXXX,      XXXXXXX,        KC_MS_UP,       XXXXXXX,        KC_MS_WH_UP,    XXXXXXX,        XXXXXXX,                                        XXXXXXX,        KC_HOME,        KC_PGDOWN,      KC_PGUP,        KC_END,         XXXXXXX,        KC_MS_ACCEL2,
-      _______,      KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  XXXXXXX,                                                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        XXXXXXX,
-      _______,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        KC_VOLD,        KC_MUTE,        KC_VOLU,        XXXXXXX,        KC_MS_ACCEL1,
-      _______,      _______,        _______,        _______,        _______,                                                                                                        KC_MPRV,        KC_MPLY,        KC_MNXT,        XXXXXXX,        KC_MS_ACCEL0,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        LGUI(KC_MINUS), LGUI(KC_0),     RGUI(KC_EQUAL), XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        KC_HOME,        KC_PGDOWN,      KC_PGUP,        KC_END,         XXXXXXX,        XXXXXXX,
+    _______,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        XXXXXXX,
+    _______,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        KC_VOLD,        KC_MUTE,        KC_VOLU,        XXXXXXX,        XXXXXXX,
+    _______,        _______,        _______,        _______,        _______,                                                                                                        KC_MPRV,        KC_MPLY,        KC_MNXT,        XXXXXXX,        XXXXXXX,
                                                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                                                                     XXXXXXX,        XXXXXXX,
-                                                                                    KC_MS_BTN1,     KC_MS_BTN2,     _______,        _______,        XXXXXXX,        XXXXXXX
+                                                                                    XXXXXXX,        XXXXXXX,        _______,        XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
   // symbols and F-keys
   [2] = LAYOUT_ergodox_pretty(
@@ -86,16 +86,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                                                     XXXXXXX,        XXXXXXX,
                                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
-  // mouse
+  // mouse (WASD)
   [3] = LAYOUT_ergodox_pretty(
-      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        KC_MS_WH_UP,    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        KC_MS_ACCEL2,
-      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                                        KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_UP,       KC_MS_RIGHT,    XXXXXXX,        KC_MS_BTN2,
-      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        KC_MS_WH_DOWN,  XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        KC_MS_ACCEL1,
-      XXXXXXX,      XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                                                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,
+    _______,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_MS_UP,       XXXXXXX,        KC_MS_WH_UP,    XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_DOWN,  XXXXXXX,                                                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    KC_MS_ACCEL1,   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    KC_MS_ACCEL0,   XXXXXXX,        _______,        _______,        _______,                                                                                                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                                                                     XXXXXXX,        XXXXXXX,
-                                                                                    XXXXXXX,        XXXXXXX,        _______,        XXXXXXX,        XXXXXXX,        KC_MS_BTN1
+                                                                                    KC_MS_BTN1,     KC_MS_BTN2,     _______,        XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
 };
 

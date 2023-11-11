@@ -20,7 +20,14 @@
 // eww, default acceleration
 #undef MOUSEKEY_WHEEL_TIME_TO_MAX
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 0
+
 // hack to have a tap/hold option for the same key and same layer with TT
 #undef TAPPING_TOGGLE
 #define TAPPING_TOGGLE 1
+
+// https://docs.qmk.fm/#/feature_caps_word
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_IDLE_TIMEOUT 2000
+// only because I have to use it to type underscore...
+#define CAPS_WORD_INVERT_ON_SHIFT
 

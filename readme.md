@@ -1,3 +1,10 @@
+## Quick Reference
+
+```sh
+make ergodox_ez:seankelley
+wally-cli ergodox_ez_base_seankelley.hex
+```
+
 # ZSA's fork of QMK Firmware
 
 [![Current Version](https://img.shields.io/github/tag/zsa/qmk_firmware.svg)](https://github.com/zsa/qmk_firmware/tags)
